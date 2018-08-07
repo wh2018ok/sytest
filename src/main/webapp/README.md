@@ -1,8 +1,8 @@
 # open api demo (java ver.)
 java version "1.7.0_75"
-dulei
-## Getting Started
 
+## Getting Started
+dulei
 1..将工程clone到本地：```git clone https://github.com/ddtalk/HarleyCorp.git```，导入到IDE中，比如eclipse点击```File->import```导入到eclipse中
 
 2.打开工程的Env.java文件，填入企业的CORP_ID和SECRET（CORP_ID和SECRET可以在企业OA后台找到）

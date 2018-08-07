@@ -86,11 +86,11 @@ var _config = <%= com.alibaba.dingtalk.openapi.demo.auth.AuthHelper.getConfig(re
 		<div id="userId" style="display:inline-block"></div>
 	</div>
 	<br>
-	<div style="padding-left:10px;">&nbsp;&nbsp;&nbsp;&nbsp;欢迎您：
+	<!-- <div style="padding-left:10px;">&nbsp;&nbsp;&nbsp;&nbsp;欢迎您：
 	<div id="userName" style="display:inline-block"></div>
 	&nbsp;成为钉钉开发者，您当前在钉钉的<code>userId</code>为：
-		<div id="userId" style="display:inline-block;font-weight:bold"></div> 。</div>
-<!--	<div style="padding-left:10px;">&nbsp;&nbsp;&nbsp;&nbsp;我们为您提供了文档＋<code>api</code>帮助您快速的开发微应用并接入钉钉。</div>-->
+		<div id="userId" style="display:inline-block;font-weight:bold"></div> 。</div>-->
+	<div style="padding-left:10px;">&nbsp;&nbsp;&nbsp;&nbsp;我们为您提供了文档＋<code>api</code>帮助您快速的开发微应用并接入钉钉。</div>
 	<br>
  <ul>
 <li>
