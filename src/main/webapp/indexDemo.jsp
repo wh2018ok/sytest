@@ -142,7 +142,7 @@ li {
 
 		var items = document.querySelectorAll('li');
 		items[0].addEventListener('click', function() {
-			window.location = './nav/1.html';
+			window.location = './nav/1demo.html';
 		});
 		items[1].addEventListener('click', function() {
 			openLink('https://www.baidu.com/');
