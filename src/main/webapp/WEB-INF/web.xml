@@ -36,4 +36,13 @@
     <servlet-name>EventChangeReceiveServlet</servlet-name>
     <url-pattern>/eventreceive</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>UploadHandleServlet</servlet-name>
+    <servlet-class>com.alibaba.dingtalk.openapi.servlet.UploadHandleServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UploadHandleServlet</servlet-name>
+    <url-pattern>/servlet/UploadHandleServlet</url-pattern>
+</servlet-mapping>
 </web-app>
