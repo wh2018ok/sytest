@@ -1,7 +1,7 @@
 ### 软件依赖
 * java version "1.7"
 * maven3
-杜磊修改
+王珩修改
 ## Getting Started
 
 1. 将工程clone到本地：`git clone https://github.com/open-dingtalk/openapi-demo-java.git`
