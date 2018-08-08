@@ -58,7 +58,7 @@ li {
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<title>企业开发者首页</title>
+<title>文件传阅系统</title>
 <script type="text/javascript">
 	//在此拿到jsAPI权限验证配置所需要的信息
 	var _config =
@@ -91,52 +91,36 @@ li {
 		</strong>
 		</span>
 		<strong>使用文件传阅</strong>
-
 	</div>
 	<br>
-	<div style="padding-left: 10px;">
-		&nbsp;&nbsp;&nbsp;&nbsp;我们为您提供了文档＋
-		<code>api</code>
-		帮助您快速的开发微应用并接入钉钉。
-	</div>
+	<br>
+	
+	<div align="center">&nbsp;&nbsp;&nbsp;&nbsp;您有？条未处理文件任务，请及时处理！</div>
 	<br>
 	<ul>
 		<li>
 			<div class="icon">
-				<img src="list/num11.png" style="width: 25px; height: 25px">
+				<img src="pic/select (4).jpg" style="width: 25px; height: 25px">
 			</div>
-			<div class="text">企业接入指南</div>
-		</li>
-
-		<li>
-			<div class="icon">
-				<img src="list/num2.png" style="width: 25px; height: 25px">
-			</div>
-			<div class="text">使用JSAPI</div>
+			<strong><div class="text">创建文件</div></strong>
 		</li>
 		<li>
 			<div class="icon">
-				<img src="list/num3.png" style="width: 25px; height: 25px">
+				<img src="pic/select.jpg" style="width: 25px; height: 25px">
 			</div>
-			<div class="text">List展示（当前仅支持Android）</div>
+			<strong><div class="text">传阅文件</div></strong>
 		</li>
 		<li>
 			<div class="icon">
-				<img src="list/num4.png" style="width: 25px; height: 25px">
+				<img src="pic/select (2).jpg" style="width: 25px; height: 25px">
 			</div>
-			<div class="text">侧拉展现（当前仅支持Android）</div>
+			<strong><div class="text">查询统计</div></strong>
 		</li>
 		<li>
 			<div class="icon">
-				<img src="list/num5.png" style="width: 25px; height: 25px">
+				<img src="pic/select (3).jpg" style="width: 25px; height: 25px">
 			</div>
-			<div class="text">Tab页面（当前仅支持Android）</div>
-		</li>
-		<li>
-			<div class="icon">
-				<img src="list/num6.png" style="width: 25px; height: 25px">
-			</div>
-			<div class="text">企业通讯录</div>
+			<strong><div class="text">下载文件</div></strong>
 		</li>
 	</ul>
 	<script type="text/javascript">
@@ -158,11 +142,12 @@ li {
 
 		var items = document.querySelectorAll('li');
 		items[0].addEventListener('click', function() {
-			openLink('https://www.baidu.com/');
-		});
-		items[1].addEventListener('click', function() {
 			window.location = './nav/1.html';
 		});
+		items[1].addEventListener('click', function() {
+			openLink('https://www.baidu.com/');
+		});
+		
 		items[2].addEventListener('click', function() {
 			window.location = './list/list.html';
 		});

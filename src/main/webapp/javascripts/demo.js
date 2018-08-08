@@ -20,7 +20,7 @@ dd.config({
 
 dd.ready(function() {
     dd.biz.navigation.setTitle({
-        title: '钉钉demo',
+        title: '遵义四医文件传阅器',
         onSuccess: function(data) {
         },
         onFail: function(err) {
@@ -46,7 +46,7 @@ dd.ready(function() {
 
 	dd.biz.navigation.setMenu({
 		backgroundColor : "#ADD8E6",
-		items : [
+		items :  [
 			{
 				id:"此处可以设置帮助",//字符串
 			// "iconId":"file",//字符串，图标命名
@@ -56,7 +56,7 @@ dd.ready(function() {
 			{
 				"id":"2",
 			"iconId":"photo",
-			  "text":"我们"
+			  "text":"关于我们"
 			}
 			,
 			{
