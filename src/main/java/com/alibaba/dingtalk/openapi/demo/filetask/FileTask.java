@@ -4,18 +4,18 @@ public class FileTask {
 	private String id;//任务id
 	private String name;//任务名称
 	private String fileno;//发文号
-	private Date gotTime;//收文日期
-	private String from;//收文机构
+	private Date gottime;//收文日期
+	private String place;//收文机构
 	private String advice;//拟办意见
-	private String createrId;//创建人id
-	private String auditorId;//主审人ID
-	private String audAdvice;//主审人意见
-	private String leaderId;//负责人id
-	private String leaderAdvice;//负责人意见
-	private String derecterId;//承办人id
+	private String createrid;//创建人id
+	private String auditorid;//主审人ID
+	private String audadvice;//主审人意见
+	private String leaderid;//负责人id
+	private String leaderadvice;//负责人意见
+	private String derecterid;//承办人id
 	private String result;//处理结果
 	private List<String> coordinators;//协办人ID列表
-	private Date dueDate;//截止日期
+	private Date duedate;//截止日期
 	private char state;//任务状态
 	public String getId() {
 		return id;
@@ -23,29 +23,29 @@ public class FileTask {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getFileno() {
-		return fileno;
-	}
-	public void setFileno(String fileno) {
-		this.fileno = fileno;
-	}
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Date getGotTime() {
-		return gotTime;
+	public String getFileno() {
+		return fileno;
 	}
-	public void setGotTime(Date gotTime) {
-		this.gotTime = gotTime;
+	public void setFileno(String fileno) {
+		this.fileno = fileno;
 	}
-	public String getFrom() {
-		return from;
+	public Date getGottime() {
+		return gottime;
 	}
-	public void setFrom(String from) {
-		this.from = from;
+	public void setGottime(Date gottime) {
+		this.gottime = gottime;
+	}
+	public String getPlace() {
+		return place;
+	}
+	public void setPlace(String place) {
+		this.place = place;
 	}
 	public String getAdvice() {
 		return advice;
@@ -53,41 +53,41 @@ public class FileTask {
 	public void setAdvice(String advice) {
 		this.advice = advice;
 	}
-	public String getCreaterId() {
-		return createrId;
+	public String getCreaterid() {
+		return createrid;
 	}
-	public void setCreaterId(String createrId) {
-		this.createrId = createrId;
+	public void setCreaterid(String createrid) {
+		this.createrid = createrid;
 	}
-	public String getAuditorId() {
-		return auditorId;
+	public String getAuditorid() {
+		return auditorid;
 	}
-	public void setAuditorId(String auditorId) {
-		this.auditorId = auditorId;
+	public void setAuditorid(String auditorid) {
+		this.auditorid = auditorid;
 	}
-	public String getAudAdvice() {
-		return audAdvice;
+	public String getAudadvice() {
+		return audadvice;
 	}
-	public void setAudAdvice(String audAdvice) {
-		this.audAdvice = audAdvice;
+	public void setAudadvice(String audadvice) {
+		this.audadvice = audadvice;
 	}
-	public String getLeaderId() {
-		return leaderId;
+	public String getLeaderid() {
+		return leaderid;
 	}
-	public void setLeaderId(String leaderId) {
-		this.leaderId = leaderId;
+	public void setLeaderid(String leaderid) {
+		this.leaderid = leaderid;
 	}
-	public String getLeaderAdvice() {
-		return leaderAdvice;
+	public String getLeaderadvice() {
+		return leaderadvice;
 	}
-	public void setLeaderAdvice(String leaderAdvice) {
-		this.leaderAdvice = leaderAdvice;
+	public void setLeaderadvice(String leaderadvice) {
+		this.leaderadvice = leaderadvice;
 	}
-	public String getDerecterId() {
-		return derecterId;
+	public String getDerecterid() {
+		return derecterid;
 	}
-	public void setDerecterId(String derecterId) {
-		this.derecterId = derecterId;
+	public void setDerecterid(String derecterid) {
+		this.derecterid = derecterid;
 	}
 	public String getResult() {
 		return result;
@@ -95,22 +95,23 @@ public class FileTask {
 	public void setResult(String result) {
 		this.result = result;
 	}
-	public char getState() {
-		return state;
-	}
-	public void setState(char state) {
-		this.state = state;
-	}
 	public List<String> getCoordinators() {
 		return coordinators;
 	}
 	public void setCoordinators(List<String> coordinators) {
 		this.coordinators = coordinators;
 	}
-	public Date getDueDate() {
-		return dueDate;
+	public Date getDuedate() {
+		return duedate;
 	}
-	public void setDueDate(Date dueDate) {
-		this.dueDate = dueDate;
+	public void setDuedate(Date duedate) {
+		this.duedate = duedate;
 	}
+	public char getState() {
+		return state;
+	}
+	public void setState(char state) {
+		this.state = state;
+	}
+	
 }

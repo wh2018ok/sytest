@@ -2,18 +2,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <html>
-	<title>创建文件</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<link rel="stylesheet" href="../stylesheets/style.css">
-    <style>
-        body {
-            background-color: white;
-        }
-    </style>
-	<script type="text/javascript" src="javascripts/base.js"></script>
-	<script type="text/javascript" src="http://g.alicdn.com/ilw/ding/0.7.3/scripts/dingtalk.js">
-	</script>
-	<script type="text/javascript">
+<title>创建文件</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="../stylesheets/style.css">
+<style>
+body {
+	background-color: white;
+}
+.r{position:fixed; bottom:0;}
+</style>
+<script type="text/javascript" src="javascripts/base.js"></script>
+<script type="text/javascript"
+	src="http://g.alicdn.com/ilw/ding/0.7.3/scripts/dingtalk.js">
+</script>
+<script type="text/javascript">
 
 	dd.config({
         /**
@@ -22,7 +25,6 @@
     });
 
     dd.ready(init);
-
     function init() {
         log.i('runtimeready');
 
@@ -195,55 +197,88 @@
 	</script>
 </head>
 <body>
+
+	<form action="1demo.jsp" method="post">
+		<table>
+			<div>
+			<tr>
+				<td><b>*发文结构:</b></td>
+				<td><input type="text" name="place"></td>
+			</tr>
+			</div>
+			<tr>
+				<td><b>*文件名称:</b></td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td><b>*收文日期:</b></td>
+				<td><input type="date" name="gottime"></td>
+			</tr>
+			<tr>
+				<td><b>*文件编号:</b></td>
+				<td><input type="text" name="fileno"></td>
+			</tr>
+			<tr>
+				<td><b>*拟办意见:</b></td>
+				<td><input type="text" name="advice"></td>
+			</tr>
+			<tr>
+				<td><b>*截止日期:</b></td>
+				<td><input type="date" name="duedate"></td>
+			</tr>
+		</table>
+	</form>
+<form action="1demo.jsp" method="post">
+<div>
+    <p>
+      <label>*发文结构：</label> 
+      <input type="text" name="place">
+    </p>
+</div>
+<div>
+    <p>
+      <label>*文件名称：</label> 
+      <input type="text" name="name">
+    </p>
+</div>
+<div>
+    <p>
+      <label>*收文日期：</label> 
+      <input type="date" name="gottime">
+    </p>
+</div>
+<div>
+    <p>
+      <label>*文件编号：</label> 
+      <input type="text" name="fileno">
+    </p>
+</div>
+<div>
+    <p>
+      <label>*拟办意见：</label> 
+      <input type="text" name="advice">
+    </p>
+</div>
+<div>
+    <p>
+      <label>*截止日期：</label> 
+      <input type="date" name="duedate">
+    </p>
+</div>
+</form>		
+
 	<div>
-	<p>
-	<label>*发文结构：</label>
-	<input type="text" vlaue="" />
-	</p>
+		<form
+			action="${pageContext.request.contextPath}/servlet/UploadHandleServlet"
+			enctype="multipart/form-data" method="post">
+			*附件：<input type="file" name="file1"><br />
+		</form>
 	</div>
-	<div>
-	<p>
-	<label>*文件名称：</label>
-	<input type="text" vlaue="" />
-	</p>
-	</div>
-	<div>
-	 <form action="${pageContext.request.contextPath}/servlet/UploadHandleServlet" enctype="multipart/form-data" method="post">
-        *附件1：<input type="file" name="file1" ><br/>
-        *附件2：<input type="file" name="file2" ><br/> 
-        *附件3：<input type="file" name="file3" ><br/> 
-        *附件4：<input type="file" name="file4" ><br/> 
-        *附件5：<input type="file" name="file5" ><br/> 
-        *附件6：<input type="file" name="file6" ><br/> 
-        *附件7：<input type="file" name="file7" ><br/>     
-    </form>
-	</div>
-	<div>
-	<p>
-	<label>*收文日期：</label>
-	<input type="date"  vlaue="" />
-	</p>
-	</div>
-	<div>
-	<p>
-	<label>*文    号：</label>
-	<input type="text" vlaue="" />
-	</p>
-	</div>
-	<div>
-	<p>
-	<label>*拟办意见：</label>
-	<input type="text" vlaue="" />
-	</p>
-	</div>
-	<div>
-	<p>
-	<label>*截止日期：</label>
-	<input type="date" name="filename" vlaue="" />
-	</p>
+	<div class="r">
+	<input type="submit" value="确认"  class="btn btn-primary"/>
 	</div>
 </body>
-	<script type="text/javascript">
+<script type="text/javascript">
 	document.getElementById('goto3').addEventListener('click', funcition(){
 		alert("hahha");
 		go1('3',2);

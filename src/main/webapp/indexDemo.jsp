@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <%@ page language="java" import="java.util.*"
 	contentType="text/html;charset=utf-8"%>
-<%@ page import="java.sql.*" %>
+<%@ page import="java.sql.*"%>
 <html>
 <head>
 <meta http-equiv=Content-Type content="text/html;charset=utf-8">
@@ -83,97 +83,39 @@ li {
 </head>
 
 <body>
-<% 
-
-// URL指向要访问的数据库名test1
-String url = "jdbc:mysql://127.0.0.1:3306/fileread?characterEncoding=utf8&useSSL=true&serverTimezone=UTC";
-// MySQL配置时的用户名
-String user = "root";
-// Java连接MySQL配置时的密码
-String password = "123.com";
-try {
-
-// 1 加载驱动程序
-
-Class.forName("com.mysql.jdbc.Driver");
-
-// 2 连接数据库
-
-Connection conn=DriverManager.getConnection(url, user, password);
-
-// 3 用来执行SQL语句
-
-Statement statement = conn.createStatement();
-
-// 要执行的SQL语句
-String sql = "select * from user";
-ResultSet rs = statement.executeQuery(sql);
-String username = null;
-String sex=null;
-int age;
-while (rs.next()) { 
-username = rs.getString("username");	
-sex = rs.getString("sex");
-age = rs.getInt("age");
-out.println(username+"\t"+sex+"\t"+age); 
-}	
-rs.close();
-conn.close();
-} catch (ClassNotFoundException e) {
-System.out.println("Sorry,can`t find the Driver!");
-e.printStackTrace();
-} catch (SQLException e) {
-e.printStackTrace();
-} catch (Exception e) {
-e.printStackTrace();
-}
-
-%>
-
-
-
-
 
 
 	<div align="center">
-		<strong>欢迎您</strong>
-		<span>
-		<strong>
-		<div id="userName" style="display: inline-block">
-		</div>
+		<strong>欢迎您</strong> <span> <strong>
+				<div id="userName" style="display: inline-block"></div>
 		</strong>
-		</span>
-		<strong>使用文件传阅</strong>
+		</span> <strong>使用文件传阅</strong>
 	</div>
 	<br>
 	<br>
-	
+
 	<div align="center">&nbsp;&nbsp;&nbsp;&nbsp;您有？条未处理文件任务，请及时处理！</div>
 	<br>
 	<ul>
 		<li>
 			<div class="icon">
 				<img src="pic/select (4).jpg" style="width: 25px; height: 25px">
-			</div>
-			<strong><div class="text">创建文件</div></strong>
+			</div> <strong><div class="text">创建文件</div></strong>
 		</li>
 		<li>
 			<div class="icon">
 				<img src="pic/select.jpg" style="width: 25px; height: 25px">
-			</div>
-			<strong><div class="text">传阅文件</div></strong>
+			</div> <strong><div class="text">传阅文件</div></strong>
 		</li>
 		<li>
 			<div class="icon">
 				<img src="pic/select (2).jpg" style="width: 25px; height: 25px">
-			</div>
-			<strong><div class="text">查询统计</div></strong>
+			</div> <strong><div class="text">查询统计</div></strong>
 		</li>
 		<li>
 			<div class="icon">
 				<img src="pic/select (3).jpg" style="width: 25px; height: 25px">
-			</div>
-			<strong><div class="text">下载文件</div></strong>
+			</div> <strong><div class="text">下载文件</div></strong>
 		</li>
 	</ul>
 	<script type="text/javascript">
@@ -200,7 +142,7 @@ e.printStackTrace();
 		items[1].addEventListener('click', function() {
 			openLink('https://www.baidu.com/');
 		});
-		
+
 		items[2].addEventListener('click', function() {
 			window.location = './list/list.html';
 		});
