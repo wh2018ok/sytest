@@ -197,49 +197,50 @@
 <body>
 	<div>
 	<p>
+	<label>*发文结构：</label>
+	<input type="text" vlaue="" />
+	</p>
+	</div>
+	<div>
+	<p>
 	<label>*文件名称：</label>
-	<input type="text" name="filename" vlaue="" />
-	</p>
-	<p><a href="./UploadFile.jsp"><img src="../pic/upload.jpg" width="44" height="49" ></a></p>
-	</div>
-	<p>
-	<label>*创建人：</label>
 	<input type="text" vlaue="" />
 	</p>
 	</div>
+	<div>
+	 <form action="${pageContext.request.contextPath}/servlet/UploadHandleServlet" enctype="multipart/form-data" method="post">
+        *附件1：<input type="file" name="file1" ><br/>
+        *附件2：<input type="file" name="file2" ><br/> 
+        *附件3：<input type="file" name="file3" ><br/> 
+        *附件4：<input type="file" name="file4" ><br/> 
+        *附件5：<input type="file" name="file5" ><br/> 
+        *附件6：<input type="file" name="file6" ><br/> 
+        *附件7：<input type="file" name="file7" ><br/>     
+    </form>
+	</div>
+	<div>
 	<p>
-	<label>*创建日期：</label>
+	<label>*收文日期：</label>
 	<input type="date"  vlaue="" />
 	</p>
 	</div>
+	<div>
 	<p>
-	<label>*审批人：</label>
+	<label>*文    号：</label>
 	<input type="text" vlaue="" />
 	</p>
 	</div>
+	<div>
 	<p>
-	<label>*审批日期：</label>
-	<input type="date" vlaue="" />
-	</p>
-	</div>
-	<p>
-	<label>*抄送人：</label>
+	<label>*拟办意见：</label>
 	<input type="text" vlaue="" />
 	</p>
 	</div>
+	<div>
 	<p>
-	<label>*抄送日期：</label>
-	<input type="date"  vlaue="" />
+	<label>*截止日期：</label>
+	<input type="date" name="filename" vlaue="" />
 	</p>
-	</div>
-	<p>
-	<label>*抄送部门：</label>
-	<input type="text" name="filename" vlaue="" />
-	</p>
-	</div>
-	*备注：
-	<br/>
-	<textarea  rows="5" ></textarea>
 	</div>
 </body>
 	<script type="text/javascript">
